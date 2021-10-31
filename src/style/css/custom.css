@@ -10034,3 +10034,47 @@ html[lang="ru"] .op-menu-one .ct-language__dropdown li a[data-lang="ru"] {color:
 .studio-footer-one .bottom-footer ul li {display: inline-block;}
 .studio-footer-one .bottom-footer ul li a {color: rgba(255,255,255,0.5); margin: 0 5px;}
 .studio-footer-one .bottom-footer ul li a:hover {color: #fff;}
+.item {
+  background: #fff;
+  box-shadow: 0px 10px 40px 0px rgb(60 67 113 / 5%);
+  position: relative;
+  text-align: center;
+  border-radius: 5px 5px 0 0;
+  margin-top: 2em;
+  overflow: hidden;
+}
+.item p {
+  font-size: 1em;
+  text-transform: uppercase;
+}
+.item .title {
+  color: #333;
+}
+.item-header {
+  border-top-width: 0.5em;
+  border-top-style: solid;
+  position: relative;
+  z-index: 1;
+  padding: 2em 0 1.5em;
+  border-bottom: 1px solid #e8e8e8;
+}
+.item-header h2 {
+  margin: 0;
+}
+
+.item-body {
+  padding: 2em;
+}
+.item-body h3 {
+  font-size: 2em;
+}
+.item-body li {
+  font-size: 1.2em;
+  color: rgba(35, 61, 99, 0.7);
+  margin-bottom: 1em;
+}
+
+.item-footer {
+  border-top: 1px solid #e8e8e8;
+  padding: 40px 0 40px;
+}
