@@ -212,11 +212,11 @@ class Solutions extends Component {
     if(this.state.activeTab === "team"){
       return(
         <div className="flex-center mt-30">
-          <Card linkTo={"solutions/hr"}  text={"Хүний Нөөц"} content={"Байгууллагынхаа хүн бүрд эерэг туршлагыг бий болгон хөдөлмөрийн бүтээмжийг нь нэмэгдүүлж хамт олныхоо уур амьсгал, эерэг соёлыг бүтээ"}  iconsrc={"images/card/HR.png"}/>
-          <Card linkTo={"solutions/marketing"} text={"Маркетинг"} content={"Маркетингийн бүтээлч санаанаас эхлээд үйл ажиллагааны үр дүнг хэмжиж сайжруулах бүхий л процессыг технологи ашиглан хөнгөвчилж хэрэглэгчдийнхээ датанд үндэслэн оновчтой шийдвэр гаргахад erxes танд туслах болно"} iconsrc={"images/card/Marketing.png"}/>
-          <Card linkTo={""}  text={"Борлуулалт"} content={"Өөрсдийн онцлогтоо тохируулан хүссэн хэлбэрээр үйл явцаа төлөвлөж, удирдах боломжийг олгож, харилцагчидтайгаа холбогдох сувгуудыг нэгтгэхийн зэрэгцээ цахим захиалгын системийг цогцоор бүрдүүллээ"}  iconsrc={"images/card/Sales.png"}/>
-          <Card linkTo={""}  text={"Менежмент"} content={"Менежментийн технологийг ашиглан байгууллагынхаа уялдаа холбоог нэмэгдүүлж бүтээмжээ дээшүүлэх боломж"}  iconsrc={"images/card/Management.png"}/>
-          <Card linkTo={""}  text={"Хэрэглэгчийн үйлчилгээ"}  content={"Хэрэглэгчтэйгээ илүү ойр байж хүсэл сонирхол, асуудлыг нь илүү хялбараар мэдэж шийдэх боломжтой"}  iconsrc={"images/card/cuso2.png"}/>
+          <Card linkTo={"solutions/hr"}  text={"Хүний Нөөц"} content={"Байгууллагынхаа хүн бүрд эерэг туршлагыг бий болгон хөдөлмөрийн бүтээмжийг нь нэмэгдүүлж хамт олныхоо уур амьсгал, эерэг соёлыг бүтээ"}  iconsrc={"images/card/meeting.png"}/>
+          <Card linkTo={"solutions/marketing"} text={"Маркетинг"} content={"Маркетингийн бүтээлч санаанаас эхлээд үйл ажиллагааны үр дүнг хэмжиж сайжруулах бүхий л процессыг технологи ашиглан хөнгөвчилж хэрэглэгчдийнхээ датанд үндэслэн оновчтой шийдвэр гаргахад erxes танд туслах болно"} iconsrc={"images/card/presentation.png"}/>
+          <Card linkTo={""}  text={"Борлуулалт"} content={"Өөрсдийн онцлогтоо тохируулан хүссэн хэлбэрээр үйл явцаа төлөвлөж, удирдах боломжийг олгож, харилцагчидтайгаа холбогдох сувгуудыг нэгтгэхийн зэрэгцээ цахим захиалгын системийг цогцоор бүрдүүллээ"}  iconsrc={"images/card/money.png"}/>
+          <Card linkTo={""}  text={"Менежмент"} content={"Менежментийн технологийг ашиглан байгууллагынхаа уялдаа холбоог нэмэгдүүлж бүтээмжээ дээшүүлэх боломж"}  iconsrc={"images/card/suitcase.png"}/>
+          <Card linkTo={""}  text={"Хэрэглэгчийн үйлчилгээ"}  content={"Хэрэглэгчтэйгээ илүү ойр байж хүсэл сонирхол, асуудлыг нь илүү хялбараар мэдэж шийдэх боломжтой"}  iconsrc={"images/card/support.png"}/>
         </div> 
       )
     }
@@ -224,29 +224,42 @@ class Solutions extends Component {
     if(this.state.activeTab === "industry"){
       return(  
         <div className="flex-center mt-30">
-          <Card linkTo={"solutions/industry"} text={"Үл хөдлөх хөрөнгө"} content={""}  iconsrc={"images/card/home.png"} />
-          <Card linkTo={""}  text={"Банк санхүү"} content={"Тун удахгүй"} iconsrc={"images/card/Bank.png"}/>
-          <Card linkTo={""}  text={"Технологи"} content={"Тун удахгүй"}  iconsrc={"images/card/technology.png"}/>
-          <Card linkTo={""}  text={"Жижиглэн болон бөөний худалдаа"} content={"Тун удахгүй"} iconsrc={"images/card/Retail.png"}/>
+          <Card linkTo={"solutions/industry"} text={"Үл хөдлөх хөрөнгө"} content={"Захиалагч, хэрэглэгчдэд илүү хялбараар байр, үл хөдлөх хөрөнгийн талаарх мэдээлэл авах, захиалах цагийг хэмнэж хүссэн мэдээллээ хаанаас ч, хэзээ ч авах боломжтой болсон нь энэхүү технологийн шийдлийн онцлог юм"}  iconsrc={"images/card/company.png"} />
+          <Card linkTo={""}  text={"Банк санхүү"} content={"Тун удахгүй"} iconsrc={"images/card/bank.png"}/>
+          <Card linkTo={""}  text={"Технологи"} content={"Тун удахгүй"}  iconsrc={"images/card/configuration.png"}/>
+          <Card linkTo={""}  text={"Жижиглэн болон бөөний худалдаа"} content={"Тун удахгүй"} iconsrc={"images/card/store.png"}/>
         </div> 
       )
     }
   }
 
   changeTab (name){
+    document.getElementById(`li-${this.state.activeTab}`).classList.remove('is-checked')
+    document.getElementById(`li-${name}`).classList.add('is-checked')
     this.setState({activeTab:name})
   }
 
   render() {
     return (
       <Layout>
-        <div className="solid-inner-banner">
-          <h2 className="page-title">{"Боломжууд"}</h2>
+
+        <div className="blog-filter-title">
+            <h2 className="main-title">Боломжууд</h2>
+          </div>
+        <div classList="solution-tab">
+        <div className="blog-filer solution-tab">
+        <ul className="isotop-menu-wrapper blog-filter-nav">
+            <li className="is-checked" id="li-team"  onClick={()=> this.changeTab("team")}>
+              <span>Байгууллагын нэгж, хэлтэс</span>
+            </li>
+            <li id="li-industry" onClick={()=> this.changeTab("industry")}>
+              <span>Байгууллагын салбар</span>
+            </li>
+          </ul>
         </div>
-        <div className="flex-center feature-tabs">
-          <div className={`feature-tabs-item${this.state.activeTab=== "team"?"_active":""}`} onClick={()=> this.changeTab("team")}> {"Байгууллагын нэгж, хэлтэс"} </div>
-          <div className={`feature-tabs-item${this.state.activeTab=== "industry"?"_active":""}`} onClick={()=> this.changeTab("industry")}> {"Байгууллагын салбар"} </div>
         </div>
+        
+
           { this.renderTabs() }
           { this.renderCompanyFeatures() }
       </Layout>

@@ -1,6 +1,6 @@
 import React from "react";
+
 const PriceCard = (props) => {
-    const featureList = props.feature.map((el) => <li> {el} </li>);
     return (
         <div className="single-pr-table item">
             <div className="item-header" style={{ borderTopColor: props.color }}>
@@ -14,12 +14,12 @@ const PriceCard = (props) => {
                                 </div>
                                 }
             </div>
-            <div className="item-body">
-                <h4 style={{ color: props.color , marginBottom:"20px", textTransform:"uppercase"}}> {props.title} </h4>
-                <ul> {featureList} </ul>
+            <div className="pr-body item-body">
+                <h4 style={{ color: props.color}}> {props.title} </h4>
+                <ul> {props.feature.map((el) => <li key={el.toString()}> {el} </li>)} </ul>
             </div>
 
-            <div className="pr-footer item-footer">
+            <div className="item-footer">
                 <a href="#"  className="plan-button line-button-two">
                     {"Багцыг сонгох"}
                 </a>
