@@ -5,9 +5,13 @@ const HtmlHead = (props) => {
 
   const formWidgetSource =
     "https://w.office.erxes.io/build/formWidget.bundle.js";
+
+  const bookingWidgetSource = "https://w.office.erxes.io/build/bookingWidget.bundle.js";
+
   const settings = {
     messenger: { brand_id: "m7DmKt" },
     forms: [],
+    booking:{integration_id: "eNpDeE3RjmBijL7G6"}
   };
 
   for (const form of forms) {
@@ -58,6 +62,12 @@ const HtmlHead = (props) => {
         async={true}
         key={Math.random().toString()}
       ></script>
+            <script
+        src={bookingWidgetSource}
+        async={true}
+        key={Math.random().toString()}
+      ></script>
+
       {forms.length > 0 ? (
         <script
           src={formWidgetSource}
