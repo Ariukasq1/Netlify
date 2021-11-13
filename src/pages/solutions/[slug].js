@@ -21,9 +21,8 @@ class SolutionDetail extends Component {
   renderSingleFeature(data, i) {
     if (i % 2 === 0) {
       return (
-        <div
+        <div key={i}
           className="row flex-center single-feature-box"
-          style={{ overflowY: "hidden" }}
         >
           <div className="col-lg-6 order-lg-last">
             <div className="text-wrapper">
@@ -51,9 +50,8 @@ class SolutionDetail extends Component {
 
     if (i % 2 !== 0) {
       return (
-        <div
+        <div key={i}
           className="row flex-center single-feature-box"
-          style={{ overflowY: "hidden" }}
         >
           <div className="col-lg-6">
             <div className="text-wrapper">
