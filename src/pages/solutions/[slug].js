@@ -1,17 +1,15 @@
 import React, { Component } from "react";
 import { withRouter } from "next/router";
 import Layout from "../../components/Layout";
-import Pricing from "../../components/Pricing";
 import PriceCard from "../../components/PriceCard";
 import {
   INDUSTRY_PRICE_FEAUTURES,
   FEATURES,
   TITLES,
   SLOGANS,
-  SHORT_DESC,
   PAGE_DESC,
-} from "./constant";
-("./[detail]");
+} from "../../constant";
+
 class SolutionDetail extends Component {
   static async getInitialProps(context) {
     const slug = context.query.slug;
@@ -21,9 +19,7 @@ class SolutionDetail extends Component {
   renderSingleFeature(data, i) {
     if (i % 2 === 0) {
       return (
-        <div key={i}
-          className="row flex-center single-feature-box"
-        >
+        <div key={i} className="row flex-center single-feature-box">
           <div className="col-lg-6 order-lg-last">
             <div className="text-wrapper">
               <img src="../images/icon/icon30.svg" alt="" className="icon" />
@@ -50,9 +46,7 @@ class SolutionDetail extends Component {
 
     if (i % 2 !== 0) {
       return (
-        <div key={i}
-          className="row flex-center single-feature-box"
-        >
+        <div key={i} className="row flex-center single-feature-box">
           <div className="col-lg-6">
             <div className="text-wrapper">
               <img src="../images/icon/icon33.svg" alt="" className="icon" />
@@ -198,7 +192,8 @@ class SolutionDetail extends Component {
         </div>
 
         <div className="our-feature-app p0">
-          {FEATURES[slug] &&
+          {FEATURES &&
+            FEATURES[slug] &&
             FEATURES[slug].map((el, i) => this.renderSingleFeature(el, i))}
         </div>
 
