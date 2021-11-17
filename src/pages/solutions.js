@@ -124,7 +124,7 @@ class Solutions extends Component {
           </div>
         </div>
 
-        <div className="row flex-center ssingle-feature-box">
+        <div className="row flex-center single-feature-box">
           <div className="col-lg-6 order-lg-last">
             <div className="text-wrapper">
               <img src="images/icon/icon34.svg" alt="" className="icon" />
@@ -507,7 +507,7 @@ class Solutions extends Component {
             iconsrc={"images/card/presentation.png"}
           />
           <Card
-            linkTo={""}
+            linkTo={"solutions/sales"}
             text={"Борлуулалт"}
             content={
               "Өөрсдийн онцлогтоо тохируулан хүссэн хэлбэрээр үйл явцаа төлөвлөж, удирдах боломжийг олгож, харилцагчидтайгаа холбогдох сувгуудыг нэгтгэхийн зэрэгцээ цахим захиалгын системийг цогцоор бүрдүүллээ"
@@ -515,7 +515,7 @@ class Solutions extends Component {
             iconsrc={"images/card/money.png"}
           />
           <Card
-            linkTo={""}
+            linkTo={"solutions/management"}
             text={"Менежмент"}
             content={
               "Менежментийн технологийг ашиглан байгууллагынхаа уялдаа холбоог нэмэгдүүлж бүтээмжээ дээшүүлэх боломж"
@@ -523,7 +523,7 @@ class Solutions extends Component {
             iconsrc={"images/card/suitcase.png"}
           />
           <Card
-            linkTo={""}
+            linkTo={"solutions/service"}
             text={"Хэрэглэгчийн үйлчилгээ"}
             content={
               "Хэрэглэгчтэйгээ илүү ойр байж хүсэл сонирхол, асуудлыг нь илүү хялбараар мэдэж шийдэх боломжтой"
@@ -534,11 +534,11 @@ class Solutions extends Component {
       );
     }
 
-    if (this.state.activeTab === "industry") {
+    if (this.state.activeTab === "property") {
       return (
         <div className="flex-center mt-30">
           <Card
-            linkTo={"solutions-detail?slug=industry"}
+            linkTo={"solutions/property"}
             text={"Үл хөдлөх хөрөнгө"}
             content={
               "Захиалагч, хэрэглэгчдэд илүү хялбараар байр, үл хөдлөх хөрөнгийн талаарх мэдээлэл авах, захиалах цагийг хэмнэж хүссэн мэдээллээ хаанаас ч, хэзээ ч авах боломжтой болсон нь энэхүү технологийн шийдлийн онцлог юм"
@@ -581,7 +581,7 @@ class Solutions extends Component {
     return (
       <Layout>
         <div className="blog-filter-title">
-          <h2 className="main-title">Боломжууд</h2>
+          <h2 className="main-title">Шийдэлүүд</h2>
         </div>
         <div classList="solution-tab">
           <div className="blog-filer solution-tab">
@@ -593,7 +593,7 @@ class Solutions extends Component {
               >
                 <span>Байгууллагын нэгж, хэлтэс</span>
               </li>
-              <li id="li-industry" onClick={() => this.changeTab("industry")}>
+              <li id="li-property" onClick={() => this.changeTab("property")}>
                 <span>Байгууллагын салбар</span>
               </li>
             </ul>

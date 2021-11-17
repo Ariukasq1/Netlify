@@ -21,7 +21,7 @@ class Invest extends Component {
         const e = document.createElement("script");
         (e.type = "text/javascript"),
           (e.async = !0),
-          (e.src = "https://static.fairmint.co/widget/fairmint.2020.12.24.js");
+          (e.src = "https://static.fairmint.co/widget/fairmint.latest.js");
         const t = document.getElementsByTagName("script")[0];
         t.parentNode.insertBefore(e, t);
       },
