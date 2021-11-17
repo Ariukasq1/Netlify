@@ -491,7 +491,7 @@ class Solutions extends Component {
       return (
         <div className="flex-center mt-30">
           <Card
-            linkTo={"solutions?slug=hr"}
+            linkTo={"solutions-detail?slug=hr"}
             text={"Хүний Нөөц"}
             content={
               "Байгууллагынхаа хүн бүрд эерэг туршлагыг бий болгон хөдөлмөрийн бүтээмжийг нь нэмэгдүүлж хамт олныхоо уур амьсгал, эерэг соёлыг бүтээ"

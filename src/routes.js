@@ -6,4 +6,4 @@ module.exports = routes()
   .add('single', '/blog/:slug')
   .add('success-story-detail', '/success-story/:slug')
   .add('posts')
-  .add("solutions/[slug]", "/solutions/:slug");
+  .add("solutions-detail", "/solutions/:slug");
