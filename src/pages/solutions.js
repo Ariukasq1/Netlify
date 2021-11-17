@@ -499,7 +499,7 @@ class Solutions extends Component {
             iconsrc={"images/card/meeting.png"}
           />
           <Card
-            linkTo={"solutions/marketing"}
+            linkTo={"solutions/marketing?slug="}
             text={"Маркетинг"}
             content={
               "Маркетингийн бүтээлч санаанаас эхлээд үйл ажиллагааны үр дүнг хэмжиж сайжруулах бүхий л процессыг технологи ашиглан хөнгөвчилж хэрэглэгчдийнхээ датанд үндэслэн оновчтой шийдвэр гаргахад erxes танд туслах болно"
