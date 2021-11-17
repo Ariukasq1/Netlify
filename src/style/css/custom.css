@@ -2915,7 +2915,6 @@ body .line-button-three:hover,
 /*-------------------- Our Pricing/ SEO -----------------*/
 .seo-our-pricing {
   position: relative;
-  overflow: hidden;
 }
 .seo-our-pricing.section-bg {
   background: url(../../public/images/shape/bg2.png) no-repeat center top;
