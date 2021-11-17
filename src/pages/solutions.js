@@ -491,7 +491,7 @@ class Solutions extends Component {
       return (
         <div className="flex-center mt-30">
           <Card
-            linkTo={"solutions/hr"}
+            linkTo={"solutions-detail?slug=hr"}
             text={"Хүний Нөөц"}
             content={
               "Байгууллагынхаа хүн бүрд эерэг туршлагыг бий болгон хөдөлмөрийн бүтээмжийг нь нэмэгдүүлж хамт олныхоо уур амьсгал, эерэг соёлыг бүтээ"
@@ -499,7 +499,7 @@ class Solutions extends Component {
             iconsrc={"images/card/meeting.png"}
           />
           <Card
-            linkTo={"solutions/marketing"}
+            linkTo={"solutions-detail?slug=marketing"}
             text={"Маркетинг"}
             content={
               "Маркетингийн бүтээлч санаанаас эхлээд үйл ажиллагааны үр дүнг хэмжиж сайжруулах бүхий л процессыг технологи ашиглан хөнгөвчилж хэрэглэгчдийнхээ датанд үндэслэн оновчтой шийдвэр гаргахад erxes танд туслах болно"
@@ -507,7 +507,7 @@ class Solutions extends Component {
             iconsrc={"images/card/presentation.png"}
           />
           <Card
-            linkTo={"solutions/sales"}
+            linkTo={"solutions-detail?slug=sales"}
             text={"Борлуулалт"}
             content={
               "Өөрсдийн онцлогтоо тохируулан хүссэн хэлбэрээр үйл явцаа төлөвлөж, удирдах боломжийг олгож, харилцагчидтайгаа холбогдох сувгуудыг нэгтгэхийн зэрэгцээ цахим захиалгын системийг цогцоор бүрдүүллээ"
@@ -515,7 +515,7 @@ class Solutions extends Component {
             iconsrc={"images/card/money.png"}
           />
           <Card
-            linkTo={"solutions/management"}
+            linkTo={"solutions-detail?slug=management"}
             text={"Менежмент"}
             content={
               "Менежментийн технологийг ашиглан байгууллагынхаа уялдаа холбоог нэмэгдүүлж бүтээмжээ дээшүүлэх боломж"
@@ -523,7 +523,7 @@ class Solutions extends Component {
             iconsrc={"images/card/suitcase.png"}
           />
           <Card
-            linkTo={"solutions/service"}
+            linkTo={"solutions-detail?slug=service"}
             text={"Хэрэглэгчийн үйлчилгээ"}
             content={
               "Хэрэглэгчтэйгээ илүү ойр байж хүсэл сонирхол, асуудлыг нь илүү хялбараар мэдэж шийдэх боломжтой"
@@ -538,7 +538,7 @@ class Solutions extends Component {
       return (
         <div className="flex-center mt-30">
           <Card
-            linkTo={"solutions/property"}
+            linkTo={"solutions-detail?slug=property"}
             text={"Үл хөдлөх хөрөнгө"}
             content={
               "Захиалагч, хэрэглэгчдэд илүү хялбараар байр, үл хөдлөх хөрөнгийн талаарх мэдээлэл авах, захиалах цагийг хэмнэж хүссэн мэдээллээ хаанаас ч, хэзээ ч авах боломжтой болсон нь энэхүү технологийн шийдлийн онцлог юм"

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { withRouter } from "next/router";
-import Layout from "../../components/Layout";
-import PriceCard from "../../components/PriceCard";
+import Layout from "../components/Layout";
+import PriceCard from "../components/PriceCard";
 import {
   INDUSTRY_PRICE_FEAUTURES,
   FEATURES,
@@ -11,7 +11,7 @@ import {
   SOLUTIONS,
   IMAGES,
   PAGE_DESC,
-} from "../../constant";
+} from "../constant";
 
 class SolutionDetail extends Component {
   static async getInitialProps(context) {
