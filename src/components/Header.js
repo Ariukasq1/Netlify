@@ -37,7 +37,7 @@ const Header = () => (
             </li>
             <li className="nav-item">
               <a href="/solutions" className="nav-link">
-                Шийдэл
+                Шийдэлүүд
               </a>
             </li>
             <li className="nav-item">

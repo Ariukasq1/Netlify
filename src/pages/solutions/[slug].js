@@ -7,6 +7,9 @@ import {
   FEATURES,
   TITLES,
   SLOGANS,
+  SHORT_DESC,
+  SOLUTIONS,
+  IMAGES,
   PAGE_DESC,
 } from "../../constant";
 
@@ -35,7 +38,7 @@ class SolutionDetail extends Component {
 
           <div className="col-lg-6 order-lg-first">
             <div className="feature-img-box left">
-              <div className="row img-wrapper">
+              <div className="row img-wrapper pt-50">
                 <img src={`../images/${data.imgsrc}`} alt="" />
               </div>
             </div>
@@ -61,7 +64,7 @@ class SolutionDetail extends Component {
           </div>
 
           <div className="col-lg-6 order-lg-last">
-            <div className="feature-img-box left">
+            <div className="feature-img-box right">
               <div className="row img-wrapper">
                 <img src={`../images/${data.imgsrc}`} alt="" />
               </div>
@@ -76,7 +79,7 @@ class SolutionDetail extends Component {
     return (
       <>
         <div className="theme-title-one text-center">
-          <h2 id="industry-pricing" className="main-title mt-70">
+          <h2 id="property-pricing" className="main-title mt-70">
             Үнийн санал
           </h2>
         </div>
@@ -117,37 +120,12 @@ class SolutionDetail extends Component {
     );
   }
 
-  renderHeaderButtons() {
-    return (
-      <>
-        <a
-          href="#industry-demo"
-          className="theme-btn solid-button-one"
-          data-wow-delay="1.5s"
-          target="_self"
-          rel="noreferrer noopener"
-        >
-          Demo
-        </a>
-        <a
-          href="#industry-pricing"
-          className="theme-btn line-button-one"
-          data-wow-delay="1.5s"
-          target="_self"
-          rel="noreferrer noopener"
-        >
-           Үнийн санал
-        </a>
-      </>
-    );
-  }
-
   renderDemo() {
     return (
       <>
         <div className="theme-title-one text-center">
-          <h2 id="solution-demo" className="main-title mt-70">
-            Demo
+          <h2 id="property-demo" className="main-title mt-70">
+            Хотхоны цахим хуудаст байрлах жишээ загвар
           </h2>
           <div className="mt-30 flex-center">
             <div
@@ -165,28 +143,76 @@ class SolutionDetail extends Component {
 
     return (
       <Layout forms={[{ brand_id: "m7DmKt", form_id: "4uBFnr" }]}>
-        <div className="solid-inner-banner rogan-hero-section invest">
-          <div className="flex-center">
-            <h2 className="solution-page-title">{TITLES[slug]}</h2>
+        <div class="text-inner-banner-one pos-r pt-150">
+          <div class="shape-wrapper">
+            <svg class="img-shape shape-one">
+              <path
+                fill-rule="evenodd"
+                fill="rgb(255, 223, 204)"
+                d="M6.000,12.000 C9.314,12.000 12.000,9.314 12.000,6.000 C12.000,2.686 9.314,-0.000 6.000,-0.000 C2.686,-0.000 -0.000,2.686 -0.000,6.000 C-0.000,9.314 2.686,12.000 6.000,12.000 Z"
+              ></path>
+            </svg>
+            <svg class="img-shape shape-two">
+              <path
+                fill-rule="evenodd"
+                fill="rgb(182, 255, 234)"
+                d="M6.000,12.000 C9.314,12.000 12.000,9.314 12.000,6.000 C12.000,2.686 9.314,-0.000 6.000,-0.000 C2.686,-0.000 -0.000,2.686 -0.000,6.000 C-0.000,9.314 2.686,12.000 6.000,12.000 Z"
+              ></path>
+            </svg>
+            <svg class="img-shape shape-three">
+              <path
+                fill-rule="evenodd"
+                fill="rgb(181, 198, 255)"
+                d="M12.000,24.000 C18.627,24.000 24.000,18.627 24.000,12.000 C24.000,5.372 18.627,-0.000 12.000,-0.000 C5.372,-0.000 -0.000,5.372 -0.000,12.000 C-0.000,18.627 5.372,24.000 12.000,24.000 Z"
+              ></path>
+            </svg>
+            <svg class="img-shape shape-four">
+              <path
+                fill-rule="evenodd"
+                fill="rgb(255, 156, 161)"
+                d="M7.500,15.000 C11.642,15.000 15.000,11.642 15.000,7.500 C15.000,3.358 11.642,-0.000 7.500,-0.000 C3.358,-0.000 -0.000,3.358 -0.000,7.500 C-0.000,11.642 3.358,15.000 7.500,15.000 Z"
+              ></path>
+            </svg>
+            <svg class="img-shape shape-five">
+              <path
+                fill-rule="evenodd"
+                fill="rgb(178, 236, 255)"
+                d="M12.500,25.000 C19.403,25.000 25.000,19.403 25.000,12.500 C25.000,5.596 19.403,-0.000 12.500,-0.000 C5.596,-0.000 -0.000,5.596 -0.000,12.500 C-0.000,19.403 5.596,25.000 12.500,25.000 Z"
+              ></path>
+            </svg>
           </div>
-          {slug === "property" && this.renderHeaderButtons()}
+          <div class="container about-us-standard">
+            <div class="top-icon-box">
+              <div class="icon">
+                <i class="flaticon-value"></i>
+              </div>
+              <span>{SOLUTIONS[slug]}</span>
+            </div>
+            <div class="theme-title-three text-center">
+              <h2 class="title">{TITLES[slug]}</h2>
+            </div>
+            <p class="sub-heading">{SHORT_DESC[slug]}</p>
+          </div>
         </div>
-        <div className="container">
-          <div className="row mt-30 ">
-            <div className="theme-title-one text-center ">
-              <div className="upper-title mt-30 fw-500">{SLOGANS[slug]}</div>
-              <p>{PAGE_DESC[slug]}</p>
-
-              <div className="centered-img">
-                <img
-                  src={
-                    slug === "hr"
-                      ? "../images/hr/First.png"
-                      : slug === "marketing"
-                      ? "../images/marketing/info.png"
-                      : ""
-                  }
-                />
+        <div class="intro-text-block pos-r">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-6 order-lg-last">
+                <h5>
+                  <div dangerouslySetInnerHTML={{ __html: SLOGANS[slug] }} />
+                </h5>
+                <p>
+                  <div dangerouslySetInnerHTML={{ __html: PAGE_DESC[slug] }} />
+                </p>
+                <img src="images/home/sign3.png" alt="" />
+              </div>
+              <div class="col-lg-6 order-lg-first">
+                <div class="icon md-mt-40">
+                  <img
+                    src={`../images/${IMAGES[slug]}`}
+                    alt="erxes-solutions"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -258,6 +284,19 @@ class SolutionDetail extends Component {
               <div className="element-section mb-150">
                 <div className="container seo-our-pricing">
                   {this.renderDemo()}
+                </div>
+                <div class="video-action-banner-one mt-95">
+                  <div class="overlay">
+                    <a
+                      data-fancybox=""
+                      href="https://www.youtube.com/embed/aXFSJTjVjw0"
+                      class="video-button fancybox"
+                    >
+                      <img src="images/icon/icon47.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div className="container seo-our-pricing">
                   {this.renderPriceCards()}
                 </div>
               </div>

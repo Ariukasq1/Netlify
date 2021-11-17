@@ -124,7 +124,7 @@ class Solutions extends Component {
           </div>
         </div>
 
-        <div className="row flex-center ssingle-feature-box">
+        <div className="row flex-center single-feature-box">
           <div className="col-lg-6 order-lg-last">
             <div className="text-wrapper">
               <img src="images/icon/icon34.svg" alt="" className="icon" />
