@@ -499,7 +499,7 @@ class Solutions extends Component {
             iconsrc={"images/card/meeting.png"}
           />
           <Card
-            linkTo={"solutions/marketing?slug="}
+            linkTo={"solutions-detail?slug=marketing"}
             text={"Маркетинг"}
             content={
               "Маркетингийн бүтээлч санаанаас эхлээд үйл ажиллагааны үр дүнг хэмжиж сайжруулах бүхий л процессыг технологи ашиглан хөнгөвчилж хэрэглэгчдийнхээ датанд үндэслэн оновчтой шийдвэр гаргахад erxes танд туслах болно"
@@ -538,7 +538,7 @@ class Solutions extends Component {
       return (
         <div className="flex-center mt-30">
           <Card
-            linkTo={"solutions/industry"}
+            linkTo={"solutions-detail?slug=industry"}
             text={"Үл хөдлөх хөрөнгө"}
             content={
               "Захиалагч, хэрэглэгчдэд илүү хялбараар байр, үл хөдлөх хөрөнгийн талаарх мэдээлэл авах, захиалах цагийг хэмнэж хүссэн мэдээллээ хаанаас ч, хэзээ ч авах боломжтой болсон нь энэхүү технологийн шийдлийн онцлог юм"
