@@ -105,7 +105,7 @@ class Blog extends Component {
                           __html: post.excerpt.rendered.slice(0, 150),
                         }}
                       />
-                      <Link href={"blog/" + post.slug}>
+                      <Link href={"blog-detail?slug=/" + post.slug}>
                         <a className="read-more">
                           <i className="flaticon-next-1"></i>
                         </a>
