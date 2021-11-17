@@ -166,11 +166,8 @@ class SolutionDetail extends Component {
           <h2 id="property-demo" className="main-title mt-70">
             Хотхоны цахим хуудаст байрлах жишээ загвар
           </h2>
-          <div className="mt-30 flex-center">
-            <div
-              data-erxes-booking
-              style={{ width: "100%", minHeight: "300px" }}
-            />
+          <div className="mt-70 flex-center">
+            <div data-erxes-booking style={{ width: "100%", height: "50vh" }} />
           </div>
         </div>
       </>
