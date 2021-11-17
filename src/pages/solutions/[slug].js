@@ -162,13 +162,14 @@ class SolutionDetail extends Component {
 
   render() {
     const { slug } = this.props;
+
     return (
       <Layout forms={[{ brand_id: "m7DmKt", form_id: "4uBFnr" }]}>
         <div className="solid-inner-banner rogan-hero-section invest">
           <div className="flex-center">
             <h2 className="solution-page-title">{TITLES[slug]}</h2>
           </div>
-          {slug === "industry" && this.renderHeaderButtons()}
+          {slug === "property" && this.renderHeaderButtons()}
         </div>
         <div className="container">
           <div className="row mt-30 ">
@@ -197,7 +198,7 @@ class SolutionDetail extends Component {
             FEATURES[slug].map((el, i) => this.renderSingleFeature(el, i))}
         </div>
 
-        {slug === "industry" && (
+        {slug === "property" && (
           <div className="element-section mb-150">
             <div className="agn-our-pricing sass-our-pricing p0">
               <div className="section-shape-one">

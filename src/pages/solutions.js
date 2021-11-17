@@ -534,11 +534,11 @@ class Solutions extends Component {
       );
     }
 
-    if (this.state.activeTab === "industry") {
+    if (this.state.activeTab === "property") {
       return (
         <div className="flex-center mt-30">
           <Card
-            linkTo={"solutions/industry"}
+            linkTo={"solutions/property"}
             text={"Үл хөдлөх хөрөнгө"}
             content={
               "Захиалагч, хэрэглэгчдэд илүү хялбараар байр, үл хөдлөх хөрөнгийн талаарх мэдээлэл авах, захиалах цагийг хэмнэж хүссэн мэдээллээ хаанаас ч, хэзээ ч авах боломжтой болсон нь энэхүү технологийн шийдлийн онцлог юм"
@@ -581,7 +581,7 @@ class Solutions extends Component {
     return (
       <Layout>
         <div className="blog-filter-title">
-          <h2 className="main-title">Боломжууд</h2>
+          <h2 className="main-title">Шийдэл</h2>
         </div>
         <div classList="solution-tab">
           <div className="blog-filer solution-tab">
@@ -593,7 +593,7 @@ class Solutions extends Component {
               >
                 <span>Байгууллагын нэгж, хэлтэс</span>
               </li>
-              <li id="li-industry" onClick={() => this.changeTab("industry")}>
+              <li id="li-property" onClick={() => this.changeTab("property")}>
                 <span>Байгууллагын салбар</span>
               </li>
             </ul>
