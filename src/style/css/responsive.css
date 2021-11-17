@@ -650,6 +650,9 @@
   .our-feature-app .feature-img-box .img-wrapper {
     padding: 0 30px !important;
     margin: 0 !important;
+    flex-shrink: 0 !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
   .sass-our-pricing .single-pr-table .item-body {
     height: auto !important;
