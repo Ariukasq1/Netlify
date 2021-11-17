@@ -581,7 +581,7 @@ class Solutions extends Component {
     return (
       <Layout>
         <div className="blog-filter-title">
-          <h2 className="main-title">Шийдэлүүд</h2>
+          <h2 className="main-title">Шийдлүүд</h2>
         </div>
         <div classList="solution-tab">
           <div className="blog-filer solution-tab">
