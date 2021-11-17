@@ -22,24 +22,42 @@ class SolutionDetail extends Component {
   renderSingleFeature(data, i) {
     if (i % 2 === 0) {
       return (
-        <div key={i} className="row flex-center single-feature-box">
+        <div
+          key={i}
+          className={`row flex-center single-feature-box ${this.props.slug}`}
+        >
           <div className="col-lg-6 order-lg-last">
             <div className="text-wrapper">
               <img src="../images/icon/icon30.svg" alt="" className="icon" />
               <h2 className="title">{data.title}</h2>
-              <p>{data.desc}</p>
+              <div
+                className="content"
+                dangerouslySetInnerHTML={{ __html: data.desc }}
+              />
               <ul className="mt-30">
                 {data.list.map((el) => (
-                  <li key={el.toString()}>{el}</li>
+                  <li key={el.toString()}>
+                    <div dangerouslySetInnerHTML={{ __html: el }} />
+                  </li>
                 ))}
               </ul>
+              {data.additional && (
+                <i>
+                  <div dangerouslySetInnerHTML={{ __html: data.additional }} />
+                </i>
+              )}
             </div>
           </div>
 
           <div className="col-lg-6 order-lg-first">
             <div className="feature-img-box left">
               <div className="row img-wrapper pt-50">
-                <img src={`../images/${data.imgsrc}`} alt="" />
+                <img
+                  src={`../images/${data.imgsrc}`}
+                  alt=""
+                  data-aos="fade-right"
+                  data-aos-duration="1200"
+                />
               </div>
             </div>
           </div>
@@ -49,24 +67,42 @@ class SolutionDetail extends Component {
 
     if (i % 2 !== 0) {
       return (
-        <div key={i} className="row flex-center single-feature-box">
+        <div
+          key={i}
+          className={`row flex-center single-feature-box ${this.props.slug}`}
+        >
           <div className="col-lg-6">
             <div className="text-wrapper">
               <img src="../images/icon/icon33.svg" alt="" className="icon" />
               <h2 className="title">{data.title}</h2>
-              <p>{data.desc}</p>
+              <div
+                className="content"
+                dangerouslySetInnerHTML={{ __html: data.desc }}
+              />
               <ul className="mt-30">
                 {data.list.map((el) => (
-                  <li key={el.toString()}>{el}</li>
+                  <li key={el.toString()}>
+                    <div dangerouslySetInnerHTML={{ __html: el }} />
+                  </li>
                 ))}
               </ul>
+              {data.additional && (
+                <i>
+                  <div dangerouslySetInnerHTML={{ __html: data.additional }} />
+                </i>
+              )}
             </div>
           </div>
 
           <div className="col-lg-6 order-lg-last">
             <div className="feature-img-box right">
               <div className="row img-wrapper">
-                <img src={`../images/${data.imgsrc}`} alt="" />
+                <img
+                  src={`../images/${data.imgsrc}`}
+                  alt=""
+                  data-aos="fade-left"
+                  data-aos-duration="1200"
+                />
               </div>
             </div>
           </div>
@@ -78,7 +114,7 @@ class SolutionDetail extends Component {
   renderPriceCards() {
     return (
       <>
-        <div className="theme-title-one text-center">
+        <div className="theme-title-one text-center p0">
           <h2 id="property-pricing" className="main-title mt-70">
             Үнийн санал
           </h2>
@@ -90,6 +126,7 @@ class SolutionDetail extends Component {
               color="#00e1ce"
               pname="Энгийн багц"
               price="₮ 2,999,000"
+              formId="Db79tP"
               title="Хороолол"
               package={"Нэг удаа"}
               feature={INDUSTRY_PRICE_FEAUTURES[0]}
@@ -100,6 +137,7 @@ class SolutionDetail extends Component {
               color="#ffcd63"
               pname="Мэргэжлийн багц"
               title="Хотхон"
+              formId="6D94jB"
               price="₮ 8,999,000"
               package={"Нэг удаа"}
               feature={INDUSTRY_PRICE_FEAUTURES[1]}
@@ -110,6 +148,7 @@ class SolutionDetail extends Component {
             <PriceCard
               color="#9f4aff"
               pname="Энтерпрайз Багц"
+              formId="hGRWSx"
               title="Цогцолбор хотхон"
               add={"Үнийн санал асуух"}
               feature={INDUSTRY_PRICE_FEAUTURES[2]}
@@ -130,8 +169,8 @@ class SolutionDetail extends Component {
           <div className="mt-30 flex-center">
             <div
               data-erxes-booking
-              style={{ width: "500px", height: "500px" }}
-            ></div>
+              style={{ width: "100%", minHeight: "300px" }}
+            />
           </div>
         </div>
       </>
@@ -142,72 +181,96 @@ class SolutionDetail extends Component {
     const { slug } = this.props;
 
     return (
-      <Layout forms={[{ brand_id: "m7DmKt", form_id: "4uBFnr" }]}>
-        <div class="text-inner-banner-one pos-r pt-150">
-          <div class="shape-wrapper">
-            <svg class="img-shape shape-one">
+      <Layout
+        forms={
+          slug === "property"
+            ? [
+                {
+                  brand_id: "m7DmKt",
+                  form_id: "4uBFnr",
+                },
+                {
+                  brand_id: "m7DmKt",
+                  form_id: "Db79tP",
+                },
+                {
+                  brand_id: "m7DmKt",
+                  form_id: "6D94jB",
+                },
+                {
+                  brand_id: "m7DmKt",
+                  form_id: "hGRWSx",
+                },
+              ]
+            : []
+        }
+        integrationId={slug === "property" && "CGgqGQWeBZbdxLM3i"}
+      >
+        <div className="text-inner-banner-one pos-r pt-150">
+          <div className="shape-wrapper">
+            <svg className="img-shape shape-one">
               <path
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 fill="rgb(255, 223, 204)"
                 d="M6.000,12.000 C9.314,12.000 12.000,9.314 12.000,6.000 C12.000,2.686 9.314,-0.000 6.000,-0.000 C2.686,-0.000 -0.000,2.686 -0.000,6.000 C-0.000,9.314 2.686,12.000 6.000,12.000 Z"
               ></path>
             </svg>
-            <svg class="img-shape shape-two">
+            <svg className="img-shape shape-two">
               <path
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 fill="rgb(182, 255, 234)"
                 d="M6.000,12.000 C9.314,12.000 12.000,9.314 12.000,6.000 C12.000,2.686 9.314,-0.000 6.000,-0.000 C2.686,-0.000 -0.000,2.686 -0.000,6.000 C-0.000,9.314 2.686,12.000 6.000,12.000 Z"
               ></path>
             </svg>
-            <svg class="img-shape shape-three">
+            <svg className="img-shape shape-three">
               <path
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 fill="rgb(181, 198, 255)"
                 d="M12.000,24.000 C18.627,24.000 24.000,18.627 24.000,12.000 C24.000,5.372 18.627,-0.000 12.000,-0.000 C5.372,-0.000 -0.000,5.372 -0.000,12.000 C-0.000,18.627 5.372,24.000 12.000,24.000 Z"
               ></path>
             </svg>
-            <svg class="img-shape shape-four">
+            <svg className="img-shape shape-four">
               <path
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 fill="rgb(255, 156, 161)"
                 d="M7.500,15.000 C11.642,15.000 15.000,11.642 15.000,7.500 C15.000,3.358 11.642,-0.000 7.500,-0.000 C3.358,-0.000 -0.000,3.358 -0.000,7.500 C-0.000,11.642 3.358,15.000 7.500,15.000 Z"
               ></path>
             </svg>
-            <svg class="img-shape shape-five">
+            <svg className="img-shape shape-five">
               <path
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 fill="rgb(178, 236, 255)"
                 d="M12.500,25.000 C19.403,25.000 25.000,19.403 25.000,12.500 C25.000,5.596 19.403,-0.000 12.500,-0.000 C5.596,-0.000 -0.000,5.596 -0.000,12.500 C-0.000,19.403 5.596,25.000 12.500,25.000 Z"
               ></path>
             </svg>
           </div>
-          <div class="container about-us-standard">
-            <div class="top-icon-box">
-              <div class="icon">
-                <i class="flaticon-value"></i>
+          <div className="container about-us-standard">
+            <div className="top-icon-box">
+              <div className="icon">
+                <i className="flaticon-value"></i>
               </div>
               <span>{SOLUTIONS[slug]}</span>
             </div>
-            <div class="theme-title-three text-center">
-              <h2 class="title">{TITLES[slug]}</h2>
+            <div className="theme-title-three text-center">
+              <h2 className="title">{TITLES[slug]}</h2>
             </div>
-            <p class="sub-heading">{SHORT_DESC[slug]}</p>
+            <p className="sub-heading">{SHORT_DESC[slug]}</p>
           </div>
         </div>
-        <div class="intro-text-block pos-r">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-lg-6 order-lg-last">
+        <div className="intro-text-block pos-r">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-lg-6 order-lg-last">
                 <h5>
                   <div dangerouslySetInnerHTML={{ __html: SLOGANS[slug] }} />
                 </h5>
-                <p>
-                  <div dangerouslySetInnerHTML={{ __html: PAGE_DESC[slug] }} />
-                </p>
-                <img src="images/home/sign3.png" alt="" />
+                <div
+                  className="content"
+                  dangerouslySetInnerHTML={{ __html: PAGE_DESC[slug] }}
+                />
               </div>
-              <div class="col-lg-6 order-lg-first">
-                <div class="icon md-mt-40">
+              <div className="col-lg-6 order-lg-first">
+                <div className="icon md-mt-40">
                   <img
                     src={`../images/${IMAGES[slug]}`}
                     alt="erxes-solutions"
@@ -225,7 +288,7 @@ class SolutionDetail extends Component {
         </div>
 
         {slug === "property" && (
-          <div className="element-section mb-150">
+          <div className="element-section mb-150 pt-50">
             <div className="agn-our-pricing sass-our-pricing p0">
               <div className="section-shape-one">
                 <img src="../images/shape/shape-18.svg" alt="" />
@@ -285,14 +348,14 @@ class SolutionDetail extends Component {
                 <div className="container seo-our-pricing">
                   {this.renderDemo()}
                 </div>
-                <div class="video-action-banner-one mt-95">
-                  <div class="overlay">
+                <div className="video-action-banner-one property mt-95">
+                  <div className="overlay">
                     <a
                       data-fancybox=""
-                      href="https://www.youtube.com/embed/aXFSJTjVjw0"
-                      class="video-button fancybox"
+                      href="https://www.youtube.com/embed/lPPV0LeGu7g"
+                      className="video-button fancybox"
                     >
-                      <img src="images/icon/icon47.svg" alt="" />
+                      <img src="/images/icon/icon47.svg" alt="" />
                     </a>
                   </div>
                 </div>

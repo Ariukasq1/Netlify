@@ -3,7 +3,7 @@ import Link from "next/link";
 const Footer = () => (
   <footer className="theme-footer-one" id="footer">
     <div className="shape-one" data-aos="zoom-in-right" />
-    <img src="images/shape/shape-67.svg" alt="" className="shape-two" />
+    <img src="/images/shape/shape-67.svg" alt="" className="shape-two" />
     <div className="top-footer">
       <div className="container">
         <div className="bottom-footer">

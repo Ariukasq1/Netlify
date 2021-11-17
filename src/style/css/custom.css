@@ -608,7 +608,8 @@ body .line-button-two:hover,
     rgb(144, 65, 255) 100%
   ) !important;
   border-color: transparent !important;
-  color: #fff;
+  color: #fff !important;
+  cursor: pointer;
   transition: all ease 0.3s;
 }
 body .line-button-three {
@@ -5691,7 +5692,7 @@ body .line-button-three:hover,
   color: #3e3e3e;
   padding: 40px 0 30px;
 }
-.our-feature-app .text-wrapper p {
+.our-feature-app .text-wrapper p , .our-feature-app .text-wrapper .content{
   font-size: 18px;
   line-height: 30px;
   color: #8c929d;
@@ -5738,6 +5739,9 @@ body .line-button-three:hover,
 }
 .our-feature-app .feature-img-box.left {
   margin-right: 90px;
+}
+.our-feature-app .hr .feature-img-box .img-wrapper, .our-feature-app .marketing .feature-img-box .img-wrapper {
+  margin-top: 100px;
 }
 .our-feature-app .feature-img-box .img-wrapper {
   position: relative;
@@ -8220,8 +8224,11 @@ body .line-button-three:hover,
   font-weight: 600;
 }
 .intro-text-block h5 span {font-weight: 300;}
-.intro-text-block p {font-size: 18px;line-height: 32px;padding: 20px 0 35px;}
-.intro-text-block b {display: block; color: #233d63;     font-size: 16px; text-transform: uppercase;}
+.intro-text-block .content {font-size: 18px;line-height: 32px;padding: 20px 0 35px;}
+.intro-text-block b {color: #233d63;     font-size: 16px; text-transform: uppercase;}
+.intro-text-block ins {
+  display: block;
+}
 .intro-text-block h6 {
   font-family: 'gilroy-bold';
   font-size: 20px;
@@ -9095,11 +9102,21 @@ body .line-button-three:hover,
   background-repeat: no-repeat;
   animation: imageBgAnim 50s infinite linear alternate;
 }
+
+.video-action-banner-one.property {
+  background-image: url(/images/cover1.jpg);
+}
+
 .video-action-banner-one .overlay {
   background: rgba(0, 0, 0, 0.4);
   padding: 320px 0;
   text-align: center;
 }
+
+.video-action-banner-one.property .overlay {
+  padding: 250px 0;
+}
+
 .video-action-banner-one .video-button {
   width: 125px;
   height: 125px;
@@ -14228,12 +14245,12 @@ html[lang="ru"] .op-menu-one .ct-language__dropdown li a[data-lang="ru"] {
   padding: 30px 0 30px;
   position: relative;
   z-index: 1;
-  height: 180px;
   border-bottom: 1px solid #e8e8e8;
 }
 .item-header h2 {
   margin: 0;
-  color: "#FF3A46" !important;
+  font-size: 36px;
+  color: #FF3A46 !important;
 }
 .sass-our-pricing .single-pr-table .item-body {
   height: 510px;

@@ -1,17 +1,18 @@
 import Head from "next/head";
 
 const HtmlHead = (props) => {
-  const { forms = [] } = props;
-
+  const { forms = [], integrationId = "" } = props;
+  console.log(integrationId);
   const formWidgetSource =
     "https://w.office.erxes.io/build/formWidget.bundle.js";
 
-  const bookingWidgetSource = "https://w.office.erxes.io/build/bookingWidget.bundle.js";
+  const bookingWidgetSource =
+    "https://w.office.erxes.io/build/bookingWidget.bundle.js";
 
   const settings = {
     messenger: { brand_id: "m7DmKt" },
     forms: [],
-    booking:{integration_id: "eNpDeE3RjmBijL7G6"}
+    booking: { integration_id: integrationId },
   };
 
   for (const form of forms) {
@@ -47,12 +48,12 @@ const HtmlHead = (props) => {
         rel="shortcut icon"
       />
       <link
-        href="static/owl-carousel/owl.carousel.css"
+        href="/static/owl-carousel/owl.carousel.css"
         type="text/css"
         rel="stylesheet"
       />
       <link
-        href="static/jquery-ui/jquery-ui.min.css"
+        href="/static/jquery-ui/jquery-ui.min.css"
         type="text/css"
         rel="stylesheet"
       />
@@ -60,13 +61,11 @@ const HtmlHead = (props) => {
       <script
         src="https://w.office.erxes.io/build/messengerWidget.bundle.js"
         async={true}
-        key={Math.random().toString()}
       ></script>
-            <script
-        src={bookingWidgetSource}
-        async={true}
-        key={Math.random().toString()}
-      ></script>
+
+      {integrationId ? (
+        <script src={bookingWidgetSource} async={true}></script>
+      ) : null}
 
       {forms.length > 0 ? (
         <script
@@ -75,19 +74,19 @@ const HtmlHead = (props) => {
           key={Math.random().toString()}
         ></script>
       ) : null}
-      <script src="static/jquery.2.2.3.min.js"></script>
-      <script src="static/fairmint.2020.12.24.js"></script>
-      <script src="static/popper.js/popper.min.js"></script>
-      <script src="static/bootstrap/js/bootstrap.min.js"></script>
-      <script src="static/mega-menu/assets/js/custom.js"></script>
-      <script src="static/aos-next/dist/aos.js"></script>
-      <script src="static/WOW-master/dist/wow.min.js"></script>
-      <script src="static/owl-carousel/owl.carousel.min.js"></script>
-      <script src="static/jquery.appear.js"></script>
-      <script src="static/jquery.countTo.js"></script>
-      <script src="static/fancybox/dist/jquery.fancybox.min.js"></script>
-      <script src="static/isotope.pkgd.min.js"></script>
-      <script src="static/theme.js"></script>
+      <script src="/static/jquery.2.2.3.min.js"></script>
+      <script src="/static/fairmint.2020.12.24.js"></script>
+      <script src="/static/popper.js/popper.min.js"></script>
+      <script src="/static/bootstrap/js/bootstrap.min.js"></script>
+      <script src="/static/mega-menu/assets/js/custom.js"></script>
+      <script src="/static/aos-next/dist/aos.js"></script>
+      <script src="/static/WOW-master/dist/wow.min.js"></script>
+      <script src="/static/owl-carousel/owl.carousel.min.js"></script>
+      <script src="/static/jquery.appear.js"></script>
+      <script src="/static/jquery.countTo.js"></script>
+      <script src="/static/fancybox/dist/jquery.fancybox.min.js"></script>
+      <script src="/static/isotope.pkgd.min.js"></script>
+      <script src="/static/theme.js"></script>
     </Head>
   );
 };
