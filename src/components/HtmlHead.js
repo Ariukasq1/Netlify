@@ -2,7 +2,7 @@ import Head from "next/head";
 
 const HtmlHead = (props) => {
   const { forms = [], integrationId = "" } = props;
-  console.log(integrationId);
+
   const formWidgetSource =
     "https://w.office.erxes.io/build/formWidget.bundle.js";
 
