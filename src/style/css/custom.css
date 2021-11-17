@@ -5740,7 +5740,10 @@ body .line-button-three:hover,
 .our-feature-app .feature-img-box.left {
   margin-right: 90px;
 }
-.our-feature-app .hr .feature-img-box .img-wrapper, .our-feature-app .marketing .feature-img-box .img-wrapper {
+.our-feature-app .hr .feature-img-box .img-wrapper, .our-feature-app .marketing .feature-img-box .img-wrapper,
+.our-feature-app .sales .feature-img-box .img-wrapper,
+.our-feature-app .management .feature-img-box .img-wrapper,
+.our-feature-app .service .feature-img-box .img-wrapper {
   margin-top: 100px;
 }
 .our-feature-app .feature-img-box .img-wrapper {

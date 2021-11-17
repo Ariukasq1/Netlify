@@ -507,7 +507,7 @@ class Solutions extends Component {
             iconsrc={"images/card/presentation.png"}
           />
           <Card
-            linkTo={""}
+            linkTo={"solutions/sales"}
             text={"Борлуулалт"}
             content={
               "Өөрсдийн онцлогтоо тохируулан хүссэн хэлбэрээр үйл явцаа төлөвлөж, удирдах боломжийг олгож, харилцагчидтайгаа холбогдох сувгуудыг нэгтгэхийн зэрэгцээ цахим захиалгын системийг цогцоор бүрдүүллээ"
@@ -515,7 +515,7 @@ class Solutions extends Component {
             iconsrc={"images/card/money.png"}
           />
           <Card
-            linkTo={""}
+            linkTo={"solutions/management"}
             text={"Менежмент"}
             content={
               "Менежментийн технологийг ашиглан байгууллагынхаа уялдаа холбоог нэмэгдүүлж бүтээмжээ дээшүүлэх боломж"
@@ -523,7 +523,7 @@ class Solutions extends Component {
             iconsrc={"images/card/suitcase.png"}
           />
           <Card
-            linkTo={""}
+            linkTo={"solutions/service"}
             text={"Хэрэглэгчийн үйлчилгээ"}
             content={
               "Хэрэглэгчтэйгээ илүү ойр байж хүсэл сонирхол, асуудлыг нь илүү хялбараар мэдэж шийдэх боломжтой"
