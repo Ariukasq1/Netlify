@@ -1163,8 +1163,8 @@ body .line-button-three:hover,
   color: #233d63;
 }
 .theme-title-one .main-title.line-height {
-  line-height: 65px;
-    font-weight: 500;
+  line-height: 55px;
+  font-weight: 500;
 }
 .theme-title-one.studio-title .main-title {
   font-size: 72px;
@@ -2519,6 +2519,9 @@ body .line-button-three:hover,
   bottom: 0;
   right: 0;
 }
+.agn-about-us .learn-more.invest {
+  width: 260px;
+}
 .agn-about-us:before {
   content: url(../../public/images/shape/2.png);
   position: absolute;
@@ -3768,7 +3771,7 @@ body .line-button-three:hover,
   content: url(/images/shape/36.svg);
   position: absolute;
   right: 0;
-  top:0;
+  top:50%;
   z-index: -1;
 }
 .home-blog-one:after {
@@ -3846,11 +3849,14 @@ body .line-button-three:hover,
   height: 100%;
   top:0;
   left:0;
-  z-index: -1;
 }
 .img-shape {position: absolute;}
 .pos-r {position: relative;}
 .pos-a {position: absolute;}
+
+.achivement-section.investment-info, .invest-stakeholders {
+  background: #fbfcff
+}
 .achivement-section .shape-bg  {
   top:-11%;
   right: 0;
@@ -3875,10 +3881,10 @@ body .line-button-three:hover,
   line-height: 200px;
 }
 .counter-box-one .number {font-size: 30px; font-weight: 500;}
-.counter-box-one .number.color-one {color: #1dcdfb;} 
+.counter-box-one .number.color-one {color: #6965df;} 
 .counter-box-one .number.color-two {color: #ffcc42;} 
-.counter-box-one .number.color-three {color: #0de49d;} 
-.counter-box-one .number.color-four {color: #ff539e;} 
+.counter-box-one .number.color-three {color: #64d2d6;} 
+.counter-box-one .number.color-four {color: #ff6262;} 
 .counter-box-one p {
   font-size: 18px;
   opacity: .8;
@@ -3909,6 +3915,7 @@ body .line-button-three:hover,
 .theme-counter-one .center-shape {
   width: 120px;
   height: 120px;
+  padding: 30px;
   background: #fff;
   top:50%;
   left: 50%;
@@ -8580,6 +8587,8 @@ body .line-button-three:hover,
 .invest-banner .solid-button-one {
   background: #63d2d6;
   border-color: #63d2d6;
+  color: #fff;
+  cursor: pointer;
   margin: 0 10px 20px;
   box-shadow: 0px 13px 27px 0px rgba(99, 209, 214, 0.25);
 }
@@ -8614,6 +8623,12 @@ body .line-button-three:hover,
   font-weight: 500;
   text-align: center;
 }
+.invest-stakeholders .shape-wrapper .shape-one {top:22%; left: -70px;}
+.invest-stakeholders .shape-wrapper .shape-two {right: 20%;top:35%; animation: animationFramesOne 30s infinite linear;}
+.invest-stakeholders .shape-wrapper .shape-three {left: 50%;top:25%; animation: animationFramesTwo 25s infinite linear;}
+.invest-stakeholders .shape-wrapper .shape-four {right: 50%;bottom: 25%; animation: animationFramesOne 25s infinite linear;}
+.invest-stakeholders .shape-wrapper .shape-five {right: 30%;bottom: 8%;     animation: rotated 20s infinite linear;}
+.invest-stakeholders .shape-wrapper .shape-six {left: 10%;bottom:30%;   animation: rotated 20s infinite linear;}
 .rogan-hero-section a {
   position: relative;
   z-index: 2;
@@ -14041,12 +14056,13 @@ html[lang="ru"] .op-menu-one .ct-language__dropdown li a[data-lang="ru"] {
   margin-bottom: 10px;
   display: block;
   font-weight: 500;
+  display: none;
 }
 .invest-stakeholders .op-partner-section-one .img-box img {
   top: 0;
   max-width: 130px;
   max-height: 40px;
-  transform: translateY(10px);
+  transform: translateY(0);
 }
 .op-partner-section-one .img-box {
   background: #fff;

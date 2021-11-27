@@ -116,7 +116,7 @@ class Invest extends Component {
                   <div className="icon">
                     <img src="images/shape/shape-2.svg" alt="" className="bg" />
                     <img
-                      src="images/icon/icon3.png"
+                      src="images/icon/erxes-19.png"
                       alt=""
                       className="shape aos-init aos-animate"
                       data-aos="zoom-in-down"
@@ -205,7 +205,7 @@ class Invest extends Component {
 
           <a
             href="https://bit.ly/30XA4id"
-            className="learn-more theme-button-two aos-init"
+            className="learn-more theme-button-two aos-init invest"
             data-aos="fade-left"
             target="_blank"
             rel="noopener noreferer"
@@ -215,10 +215,7 @@ class Invest extends Component {
           </a>
         </section>
 
-        <section
-          className="investment-info achivement-section pt-200 pb-250 pos-r md-pt-150 md-pb-150"
-          style={{ background: "#fafafa" }}
-        >
+        <section className="investment-info achivement-section pt-200 pb-250 pos-r md-pt-150 md-pb-150">
           <div className="shape-wrapper">
             <img
               src="/images/shape/46.svg"
@@ -237,6 +234,11 @@ class Invest extends Component {
                 </div>
                 <p className="pt-50">
                   Бид нийт хувьцааныхаа 13.39%-ийг зах зээлд санал болгож байна.
+                  <br /> <br />
+                  Эрксис технологийн компани нь маркетингийн технологийг бүхий л
+                  бизнесүүдэд хүртээмжтэй болгох, эх орныхоо эдийн засгийн
+                  хөгжлийг тогтворжуулах, улмаар дэлхийн тавцанд Монгол
+                  инженерүүдийн бүтээлийг аваачихыг зорьсоор ирсэн билээ.
                 </p>
               </div>
 
@@ -297,7 +299,7 @@ class Invest extends Component {
                       <h2 className="number color-four">$1.83</h2>
                     </div>
                     <div className="center-shape pos-a">
-                      <img src="/images/shape/44.svg" alt="" />
+                      <img src="/images/icon/icon3.png" alt="" />
                     </div>
                   </div>
                 </div>
@@ -355,7 +357,7 @@ class Invest extends Component {
           </div>
         </section>
 
-        <section className="investors">
+        <section className="investors pb-150">
           <div className="container">
             <div className="theme-title-one text-center pb-30">
               <h3>Онцлох хөрөнгө оруулагчид</h3>
@@ -374,7 +376,13 @@ class Invest extends Component {
           </div>
         </section>
 
-        <section className="invest-stakeholders pt-150 pb-70">
+        <section className="invest-stakeholders pt-90 pb-70 pos-r">
+          <div class="shape-wrapper">
+            <img src="images/shape/21.svg" alt="" class="shape-one img-shape" />
+            <img src="images/shape/23.svg" alt="" class="shape-two img-shape" />
+            <img src="images/shape/9.svg" alt="" class="shape-five img-shape" />
+            <img src="images/shape/25.svg" alt="" class="shape-six img-shape" />
+          </div>
           <div className="theme-title-one text-center pb-30">
             <h3>Оролцогч талууд</h3>
           </div>
@@ -385,7 +393,7 @@ class Invest extends Component {
               хөрөнгө оруулалтын системийг бүрдүүлэн ажиллаж байна.
             </p>
             <div className="row op-partner-section-one pt-50 pb-30">
-              <div className="col-md-6">
+              <div className="col-md-7">
                 <h5 className="pb-30 text-center">
                   Олон улс дахь байгууллагууд
                 </h5>
@@ -402,7 +410,7 @@ class Invest extends Component {
                       </a>
                     </div>
                   </div>
-                  <div className="col-lg-6 col-md-4 col-6">
+                  <div className="col-lg-4 col-md-4 col-6">
                     <div className="img-box bx-g mt-30">
                       <a
                         href="https://finvisor.com/"
@@ -414,7 +422,7 @@ class Invest extends Component {
                       </a>
                     </div>
                   </div>
-                  <div className="col-lg-9 col-md-4 col-6">
+                  <div className="col-lg-4 col-md-4 col-6">
                     <div className="img-box bx-g">
                       <a
                         href="https://www.crowell.com/"
@@ -428,11 +436,11 @@ class Invest extends Component {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6">
+              <div className="col-md-5">
                 <h5 className="pb-30 text-center">Монгол дахь байгууллагууд</h5>
                 <div className="row" style={{ justifyContent: "center" }}>
-                  <div className="col-lg-4 col-md-4 col-6">
-                    <div className="img-box bx-g">
+                  <div className="col-lg-6 col-md-4 col-6">
+                    <div className="img-box bx-g mt-30">
                       <a
                         href="https://www.tdbsecurities.mn/"
                         target="_blank"
@@ -444,7 +452,7 @@ class Invest extends Component {
                     </div>
                   </div>
                   <div className="col-lg-6 col-md-4 col-6">
-                    <div className="img-box bx-g mt-30">
+                    <div className="img-box bx-g">
                       <a
                         href="https://khanlex.mn/"
                         target="_blank"
@@ -461,10 +469,10 @@ class Invest extends Component {
           </div>
         </section>
 
-        <section className="invest-enterprise pt-50 pb-70">
+        <section className="invest-enterprise pt-150 pb-70">
           <div className="container">
             <div className="theme-title-one text-center pb-30">
-              <h3>Энтерпрайз харилцагчид /хөрөнгө оруулагчид/</h3>
+              <h3>Энтерпрайз харилцагчид</h3>
             </div>
             <p className="pb-50">
               Эрксис технологийн энтерпрайз хувилбарыг Монголд 13 компани үйл
@@ -612,43 +620,6 @@ class Invest extends Component {
         </section>
 
         <div className="text-inner-banner-one pos-r">
-          <div className="shape-wrapper">
-            <svg className="img-shape shape-one">
-              <path
-                fillRule="evenodd"
-                fill="rgb(255, 223, 204)"
-                d="M6.000,12.000 C9.314,12.000 12.000,9.314 12.000,6.000 C12.000,2.686 9.314,-0.000 6.000,-0.000 C2.686,-0.000 -0.000,2.686 -0.000,6.000 C-0.000,9.314 2.686,12.000 6.000,12.000 Z"
-              />
-            </svg>
-            <svg className="img-shape shape-two">
-              <path
-                fillRule="evenodd"
-                fill="rgb(182, 255, 234)"
-                d="M6.000,12.000 C9.314,12.000 12.000,9.314 12.000,6.000 C12.000,2.686 9.314,-0.000 6.000,-0.000 C2.686,-0.000 -0.000,2.686 -0.000,6.000 C-0.000,9.314 2.686,12.000 6.000,12.000 Z"
-              />
-            </svg>
-            <svg className="img-shape shape-three">
-              <path
-                fillRule="evenodd"
-                fill="rgb(181, 198, 255)"
-                d="M12.000,24.000 C18.627,24.000 24.000,18.627 24.000,12.000 C24.000,5.372 18.627,-0.000 12.000,-0.000 C5.372,-0.000 -0.000,5.372 -0.000,12.000 C-0.000,18.627 5.372,24.000 12.000,24.000 Z"
-              />
-            </svg>
-            <svg className="img-shape shape-four">
-              <path
-                fillRule="evenodd"
-                fill="rgb(255, 156, 161)"
-                d="M7.500,15.000 C11.642,15.000 15.000,11.642 15.000,7.500 C15.000,3.358 11.642,-0.000 7.500,-0.000 C3.358,-0.000 -0.000,3.358 -0.000,7.500 C-0.000,11.642 3.358,15.000 7.500,15.000 Z"
-              />
-            </svg>
-            <svg className="img-shape shape-five">
-              <path
-                fillRule="evenodd"
-                fill="rgb(178, 236, 255)"
-                d="M12.500,25.000 C19.403,25.000 25.000,19.403 25.000,12.500 C25.000,5.596 19.403,-0.000 12.500,-0.000 C5.596,-0.000 -0.000,5.596 -0.000,12.500 C-0.000,19.403 5.596,25.000 12.500,25.000 Z"
-              />
-            </svg>
-          </div>
           <div className="container">
             <h3 className="faq-page-title">Хөрөнгө оруулалтын боломжууд</h3>
           </div>
