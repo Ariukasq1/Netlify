@@ -1,7 +1,7 @@
 import Head from "next/head";
 
 const HtmlHead = (props) => {
-  const { forms = [], integrationId = "" } = props;
+  const { forms = [], integrationId = "", customFormWidgetUrl } = props;
 
   const formWidgetSource =
     "https://w.office.erxes.io/build/formWidget.bundle.js";
@@ -69,7 +69,7 @@ const HtmlHead = (props) => {
 
       {forms.length > 0 ? (
         <script
-          src={formWidgetSource}
+          src={customFormWidgetUrl ? customFormWidgetUrl : formWidgetSource}
           async={true}
           key={Math.random().toString()}
         ></script>
