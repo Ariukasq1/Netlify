@@ -1688,6 +1688,47 @@
   #theme-banner-four .main-wrapper .button-group {
     text-align: center;
   }
+  .invest-banner img {
+    margin-top: 50px;
+    padding: 0 20px;
+  }
+  .invest-banner .theme-btn {
+    min-width: 292px;
+  }
+  .invest-banner p {
+    width: 90%;
+  }
+  .agn-about-us.investment-sub {
+    margin-top: 0;
+    padding-bottom: 0 !important;
+  }
+  .investment-info {
+    padding: 80px 0 50px 0;
+  }
+  .counter-box-one {
+    position: static;
+    transform: none !important;
+    margin: 25px auto 0;
+  }
+  .theme-counter-one .center-shape {
+    display: none;
+  }
+  .theme-counter-one,
+  .theme-counter-one .inner-round-shape {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  .home-blog-one .col-md-4,
+  .invest-chances .col-lg-4 {
+    margin-bottom: 20px;
+  }
+  .op-partner-section-one .img-box {
+    margin: 0 auto 25px !important;
+  }
+  .invest-chances {
+    padding-top: 0;
+  }
 }
 
 @media only screen and (max-width: 700px) {

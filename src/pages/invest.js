@@ -101,7 +101,7 @@ class Invest extends Component {
             <div className="theme-title-one text-center">
               <h3>Хэнд хөрөнгө оруулах вэ?</h3>
             </div>
-            <p>
+            <p style={{ background: "#fff" }}>
               Бид бүхэн 2010 оноос хойш 11 жилийн хугацаанд технологийн салбарт
               тасралтгүй үйл ажиллагаагаа явуулахдаа гадаад зах зээлд зориулсан
               “Peep”, “Mogulio”, “Nobile”, “TeamOn” дөрвөн платформыг хэрэглээнд
@@ -398,7 +398,7 @@ class Invest extends Component {
                   Олон улс дахь байгууллагууд
                 </h5>
                 <div className="row" style={{ justifyContent: "center" }}>
-                  <div className="col-lg-4 col-md-4 col-6">
+                  <div className="col-lg-4 col-md-4 col-12">
                     <div className="img-box bx-g">
                       <a
                         href="https://www.fairmint.co/"
@@ -410,7 +410,7 @@ class Invest extends Component {
                       </a>
                     </div>
                   </div>
-                  <div className="col-lg-4 col-md-4 col-6">
+                  <div className="col-lg-4 col-md-4 col-12">
                     <div className="img-box bx-g mt-30">
                       <a
                         href="https://finvisor.com/"
@@ -422,7 +422,7 @@ class Invest extends Component {
                       </a>
                     </div>
                   </div>
-                  <div className="col-lg-4 col-md-4 col-6">
+                  <div className="col-lg-4 col-md-4 col-12">
                     <div className="img-box bx-g">
                       <a
                         href="https://www.crowell.com/"
@@ -439,7 +439,7 @@ class Invest extends Component {
               <div className="col-md-5">
                 <h5 className="pb-30 text-center">Монгол дахь байгууллагууд</h5>
                 <div className="row" style={{ justifyContent: "center" }}>
-                  <div className="col-lg-6 col-md-4 col-6">
+                  <div className="col-lg-6 col-md-4 col-12">
                     <div className="img-box bx-g mt-30">
                       <a
                         href="https://www.tdbsecurities.mn/"
@@ -451,7 +451,7 @@ class Invest extends Component {
                       </a>
                     </div>
                   </div>
-                  <div className="col-lg-6 col-md-4 col-6">
+                  <div className="col-lg-6 col-md-4 col-12">
                     <div className="img-box bx-g">
                       <a
                         href="https://khanlex.mn/"
