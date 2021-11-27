@@ -10,8 +10,12 @@ import "../style/fonts/font-awesome/css/font-awesome.css";
 const Layout = (props) => {
   return (
     <>
-      <HtmlHead forms={props.forms} integrationId={props.integrationId} />
-      <Header />
+      <HtmlHead
+        forms={props.forms}
+        integrationId={props.integrationId}
+        customFormWidgetUrl={props.customFormWidgetUrl}
+      />
+      <Header navColor={props.navColor} />
       {props.children}
       <ScrollTop />
       <Footer />
