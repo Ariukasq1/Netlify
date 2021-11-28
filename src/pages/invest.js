@@ -229,7 +229,7 @@ class Invest extends Component {
             <div className="row">
               <div className="col-lg-5 order-lg-last">
                 <div className="theme-title-one">
-                  <div class="upper-title mb-5">#ЦахиуртХамтдаа</div>
+                  <div className="upper-title mb-5">#ЦахиуртХамтдаа</div>
                   <h2 className="main-title underline line-height">
                     $ERXS үнэт цаасны тоон үзүүлэлт
                   </h2>
@@ -379,11 +379,27 @@ class Invest extends Component {
         </section>
 
         <section className="invest-stakeholders pt-90 pb-70 pos-r">
-          <div class="shape-wrapper">
-            <img src="images/shape/21.svg" alt="" class="shape-one img-shape" />
-            <img src="images/shape/23.svg" alt="" class="shape-two img-shape" />
-            <img src="images/shape/9.svg" alt="" class="shape-five img-shape" />
-            <img src="images/shape/25.svg" alt="" class="shape-six img-shape" />
+          <div className="shape-wrapper">
+            <img
+              src="images/shape/21.svg"
+              alt=""
+              className="shape-one img-shape"
+            />
+            <img
+              src="images/shape/23.svg"
+              alt=""
+              className="shape-two img-shape"
+            />
+            <img
+              src="images/shape/9.svg"
+              alt=""
+              className="shape-five img-shape"
+            />
+            <img
+              src="images/shape/25.svg"
+              alt=""
+              className="shape-six img-shape"
+            />
           </div>
           <div className="theme-title-one text-center pb-30">
             <h3>Оролцогч талууд</h3>

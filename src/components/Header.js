@@ -1,7 +1,9 @@
 const Header = (props) => {
   return (
     <div
-      className={`theme-main-menu theme-menu-one d-align-item ${props.navColor}`}
+      className={`theme-main-menu theme-menu-one d-align-item ${
+        props.navColor
+      } ${props.showInvest ? "show-banner" : ""}`}
     >
       <div className="logo">
         <a href="/">

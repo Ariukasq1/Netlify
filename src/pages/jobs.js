@@ -39,12 +39,12 @@ class HumanResource extends Component {
             <div className="row">
               <div className="pb-30 job-application">
                 <button
-                  class="theme-btn solid-button-one"
+                  className="theme-btn solid-button-one"
                   data-erxes-modal="FMbmkB"
                 >
                   Анкет бөглөх
                   <i
-                    class="fa fa-angle-right icon-right"
+                    className="fa fa-angle-right icon-right"
                     aria-hidden="true"
                   ></i>
                 </button>

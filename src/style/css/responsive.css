@@ -2104,6 +2104,25 @@
   .studio-footer-one .bottom-footer {
     text-align: center;
   }
+  .promotion-banner {
+    flex-wrap: nowrap;
+    padding: 10px 20px;
+  }
+  .promotion-banner span {
+    display: block;
+  }
+  .promotion-banner .second {
+    width: 10%;
+  }
+  .promotion-banner .button-one {
+    margin: 10px 0 0 0;
+  }
+  .theme-main-menu.show-banner:not(.fixed) {
+    top: 90px;
+  }
+  .theme-menu-one.d-align-item.show-banner:not(.fixed) .logo {
+    top: 20px !important;
+  }
 }
 /*(max-width: 575px)*/
 
