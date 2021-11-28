@@ -57,7 +57,7 @@ const Header = (props) => {
                 </a>
               </li>
               <li className="login-button">
-                <a href="https://erxes.io/create" target="_blank">
+                <a href="https://erxes.io/signup" target="_blank">
                   Бүртгүүлэх
                 </a>
               </li>
