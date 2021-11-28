@@ -295,7 +295,7 @@ class Invest extends Component {
                     </div>
                     <div className="counter-box-one pos-a">
                       <p>Хөрөнгө оруулах доод хэмжээ</p>
-                      <h2 className="number color-three">$600</h2>
+                      <h2 className="number color-three">$1000</h2>
                     </div>
                     <div className="counter-box-one pos-a">
                       <p>Нэгж хувьцааны үнэ</p>
@@ -662,7 +662,7 @@ class Invest extends Component {
                         хүртэх боломжийг олгож байна.
                       </p>
                       <br />
-                      <b>Хөрөнгө оруулалтын доод хэмжээ: $600</b>
+                      <b>Хөрөнгө оруулалтын доод хэмжээ: $1000</b>
                     </div>
                     <div className="pr-footer">
                       <a
