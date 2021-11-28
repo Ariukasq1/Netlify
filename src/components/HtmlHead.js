@@ -75,7 +75,6 @@ const HtmlHead = (props) => {
         ></script>
       ) : null}
       <script src="/static/jquery.2.2.3.min.js"></script>
-      <script src="/static/fairmint.2020.12.24.js"></script>
       <script src="/static/popper.js/popper.min.js"></script>
       <script src="/static/bootstrap/js/bootstrap.min.js"></script>
       <script src="/static/mega-menu/assets/js/custom.js"></script>

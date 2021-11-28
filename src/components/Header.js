@@ -1,6 +1,8 @@
 const Header = (props) => {
   return (
-    <div className="theme-main-menu theme-menu-one d-align-item">
+    <div
+      className={`theme-main-menu theme-menu-one d-align-item ${props.navColor}`}
+    >
       <div className="logo">
         <a href="/">
           <img src="/images/erxes-logo.svg" alt="" />

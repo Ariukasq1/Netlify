@@ -57,7 +57,7 @@ class Invest extends Component {
                 Стратегийн хөрөнгө оруулагч болох
               </a>
               <a
-                href="https://bit.ly/3nUi6Wp"
+                href="https://bit.ly/30XA4id"
                 className="theme-btn line-button-one"
                 target="_blank"
                 rel="noreferrer noopener"
@@ -65,12 +65,18 @@ class Invest extends Component {
                 Дэлгэрэнгүй мэдээлэл авах
               </a>
             </div>
-            <p>
-              Хөрөнгө оруулалт болон хувьцаа худалдан авахтай холбоотой
-              дэлгэрэнгүй мэдээлэл авахыг хүсвэл TDB Securities-н
-              info@tdbsecurities.mn хаяг руу хандаарай. Мөн 70100261, 11311914
-              утсаар нөхцөл байдалд тохирсон мэргэжлийн зөвлөгөөг аваарай.
-            </p>
+            <div className="additional-info">
+              <div className="additional-info-logo">
+                <img src="/images/logo/tdb.png" alt="tdb" />
+              </div>
+              <p>
+                Хөрөнгө оруулалт болон хувьцаа худалдан авахтай холбоотой
+                дэлгэрэнгүй мэдээлэл авахыг хүсвэл TDB Securities-н &nbsp;
+                <b>info@tdbsecurities.mn</b> хаяг руу хандаарай. Мөн &nbsp;
+                <b>70100261, 11311914</b> утсаар нөхцөл байдалд тохирсон
+                мэргэжлийн зөвлөгөөг аваарай.
+              </p>
+            </div>
           </div>
         </section>
 
