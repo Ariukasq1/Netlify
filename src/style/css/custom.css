@@ -8220,6 +8220,10 @@ body .line-button-three:hover,
 .sass-our-pricing.invest-chances .single-pr-table .pr-header  {
   min-height: 85px;
 }
+.sass-our-pricing.invest-chances .no-gutters  {
+  margin: 0 auto;
+  justify-content: center;
+}
 .sass-our-pricing.invest-chances .single-pr-table .pr-header .price {
   font-size: 20px;
   text-transform: uppercase;
