@@ -39,10 +39,6 @@ class Invest extends Component {
             brand_id: "G6akbR",
             form_id: "hmihCv",
           },
-          {
-            brand_id: "m7DmKt",
-            form_id: "4uBFnr",
-          },
         ]}
         customFormWidgetUrl="https://tdbcapital.erxes.io/widgets/build/formWidget.bundle.js"
       >
@@ -699,7 +695,7 @@ class Invest extends Component {
                       </p>
                     </div>
                     <div className="pr-footer">
-                      <a data-erxes-modal="4uBFnr" className="upgrade-button">
+                      <a data-erxes-modal="hmihCv" className="upgrade-button">
                         Борлуулалтын Багтай Холбогдох
                       </a>
                     </div>
