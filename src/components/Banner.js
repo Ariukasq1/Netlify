@@ -41,7 +41,7 @@ const Header = () => (
         <ul className="button-group lightgallery">
           <li>
             <a
-              href="https://erxes.io/create"
+              href="https://erxes.io/signup"
               target="_blank"
               className="more-button wow fadeInLeft animated"
               data-wow-delay="1.5s"

@@ -39,10 +39,6 @@ class Invest extends Component {
             brand_id: "G6akbR",
             form_id: "hmihCv",
           },
-          {
-            brand_id: "m7DmKt",
-            form_id: "4uBFnr",
-          },
         ]}
         customFormWidgetUrl="https://tdbcapital.erxes.io/widgets/build/formWidget.bundle.js"
       >
@@ -57,7 +53,7 @@ class Invest extends Component {
                 Стратегийн хөрөнгө оруулагч болох
               </a>
               <a
-                href="https://bit.ly/3nUi6Wp"
+                href="https://bit.ly/30XA4id"
                 className="theme-btn line-button-one"
                 target="_blank"
                 rel="noreferrer noopener"
@@ -65,12 +61,18 @@ class Invest extends Component {
                 Дэлгэрэнгүй мэдээлэл авах
               </a>
             </div>
-            <p>
-              Хөрөнгө оруулалт болон хувьцаа худалдан авахтай холбоотой
-              дэлгэрэнгүй мэдээлэл авахыг хүсвэл TDB Securities-н
-              info@tdbsecurities.mn хаяг руу хандаарай. Мөн 70100261, 11311914
-              утсаар нөхцөл байдалд тохирсон мэргэжлийн зөвлөгөөг аваарай.
-            </p>
+            <div className="additional-info">
+              <div className="additional-info-logo">
+                <img src="/images/logo/tdb.png" alt="tdb" />
+              </div>
+              <p>
+                Хөрөнгө оруулалт болон хувьцаа худалдан авахтай холбоотой
+                дэлгэрэнгүй мэдээлэл авахыг хүсвэл TDB Securities-н &nbsp;
+                <b>info@tdbsecurities.mn</b> хаяг руу хандаарай. Мөн &nbsp;
+                <b>70100261, 11311914</b> утсаар нөхцөл байдалд тохирсон
+                мэргэжлийн зөвлөгөөг аваарай.
+              </p>
+            </div>
           </div>
         </section>
 
@@ -227,7 +229,7 @@ class Invest extends Component {
             <div className="row">
               <div className="col-lg-5 order-lg-last">
                 <div className="theme-title-one">
-                  <div class="upper-title mb-5">#ЦахиуртХамтдаа</div>
+                  <div className="upper-title mb-5">#ЦахиуртХамтдаа</div>
                   <h2 className="main-title underline line-height">
                     $ERXS үнэт цаасны тоон үзүүлэлт
                   </h2>
@@ -377,11 +379,27 @@ class Invest extends Component {
         </section>
 
         <section className="invest-stakeholders pt-90 pb-70 pos-r">
-          <div class="shape-wrapper">
-            <img src="images/shape/21.svg" alt="" class="shape-one img-shape" />
-            <img src="images/shape/23.svg" alt="" class="shape-two img-shape" />
-            <img src="images/shape/9.svg" alt="" class="shape-five img-shape" />
-            <img src="images/shape/25.svg" alt="" class="shape-six img-shape" />
+          <div className="shape-wrapper">
+            <img
+              src="images/shape/21.svg"
+              alt=""
+              className="shape-one img-shape"
+            />
+            <img
+              src="images/shape/23.svg"
+              alt=""
+              className="shape-two img-shape"
+            />
+            <img
+              src="images/shape/9.svg"
+              alt=""
+              className="shape-five img-shape"
+            />
+            <img
+              src="images/shape/25.svg"
+              alt=""
+              className="shape-six img-shape"
+            />
           </div>
           <div className="theme-title-one text-center pb-30">
             <h3>Оролцогч талууд</h3>
@@ -693,7 +711,7 @@ class Invest extends Component {
                       </p>
                     </div>
                     <div className="pr-footer">
-                      <a data-erxes-modal="4uBFnr" className="upgrade-button">
+                      <a data-erxes-modal="hmihCv" className="upgrade-button">
                         Борлуулалтын Багтай Холбогдох
                       </a>
                     </div>

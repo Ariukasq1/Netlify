@@ -1,6 +1,10 @@
 const Header = (props) => {
   return (
-    <div className="theme-main-menu theme-menu-one d-align-item">
+    <div
+      className={`theme-main-menu theme-menu-one d-align-item ${
+        props.navColor
+      } ${props.showInvest ? "show-banner" : ""}`}
+    >
       <div className="logo">
         <a href="/">
           <img src="/images/erxes-logo.svg" alt="" />
@@ -55,7 +59,7 @@ const Header = (props) => {
                 </a>
               </li>
               <li className="login-button">
-                <a href="https://erxes.io/create" target="_blank">
+                <a href="https://erxes.io/signup" target="_blank">
                   Бүртгүүлэх
                 </a>
               </li>

@@ -1332,11 +1332,27 @@ body .line-button-three:hover,
   z-index: 99;
   padding: 65px 0 0;
 }
+.theme-main-menu.show-banner:not(.fixed) {
+  top: 50px;
+  padding-top: 30px
+}
 .theme-menu-one .logo {
   position: absolute;
   top: -1px;
   left: 0;
   z-index: 3;
+}
+.theme-menu-one.white .logo img {
+  filter: brightness(0) invert(1);
+}
+.theme-menu-one.white.fixed .logo img {
+  filter: none;
+}
+.theme-menu-one.d-align-item.white .navbar .navbar-toggler {
+  color: #fff;
+}
+.theme-menu-one.d-align-item.white.fixed .navbar .navbar-toggler {
+  color: #552ab6;
 }
 .theme-menu-one .logo a {
   display: block;
@@ -1393,7 +1409,7 @@ body .line-button-three:hover,
 }
 
 .theme-menu-one .white .navbar-nav .nav-item .nav-link {
-  color: rgba(255,255,255,.7);
+  color: rgba(255,255,255,.9);
 }
 
 .theme-menu-one.d-align-item .white .navbar-nav .nav-item:hover .nav-link {
@@ -1440,6 +1456,9 @@ body .line-button-three:hover,
   top: 45px;
   left: 75px;
   width: 110px;
+}
+.theme-menu-one.d-align-item.show-banner:not(.fixed) .logo {
+  top: 20px;
 }
 .theme-menu-one.d-align-item .navbar-nav .login-button a {
   line-height: 35px;
@@ -8581,31 +8600,49 @@ body .line-button-three:hover,
   align-items: center;
   justify-content: center;
 }
-.invest-banner img {
+.invest-banner > img {
   margin: 120px 0 40px;
 }
 .invest-banner .solid-button-one {
   background: #63d2d6;
   border-color: #63d2d6;
-  color: #fff;
+  color: #fff !important;
   cursor: pointer;
   margin: 0 10px 20px;
   box-shadow: 0px 13px 27px 0px rgba(99, 209, 214, 0.25);
 }
 .invest-banner .solid-button-one:hover {
   border-color: #fff;
+  color: inherit !important;
 }
 .invest-banner .line-button-one {
   border-color: #63d2d6;
   color: #63d2d6;
   margin: 0 10px 30px;
 }
-.invest-banner p {
-  width: 65%;
+.invest-banner .additional-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.invest-banner .additional-info-logo {
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 20px;
+}
+.invest-banner .additional-info-logo img {
+  width: 70px;
+}
+.invest-banner .additional-info p {
+  width: 60%;
   color: rgba(255, 255, 255, .8);
-  font-size: 13px;
+  font-size: 14px;
   line-height: 18px;
-  margin: 0 auto;
+  text-align: left;
+}
+.invest-banner .additional-info p b {
+  color: #fda50d;
 }
 .invest-banner .line-button-one:hover {
   background: transparent;
@@ -14652,4 +14689,32 @@ html[lang="ru"] .op-menu-one .ct-language__dropdown li a[data-lang="ru"] {
 .solution-tab {
   width: 50%;
   margin: 10px auto;
+}
+
+.promotion-banner {
+  background-color: #6965df;
+  color: #fff;
+  margin-bottom: 17.5px;
+  min-height: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 15px;
+}
+
+.promotion-banner svg {
+  width: 12px;
+  cursor: pointer;
+}
+
+.promotion-banner .button-one {
+  border: 1px solid #fff;
+  color: #fff;
+  line-height: 30px;
+  font-size: 13px;
+  padding: 0 15px;
+  border-radius: 20px;
+  margin-left: 30px;
+  font-weight: 500;
 }

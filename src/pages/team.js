@@ -65,20 +65,14 @@ class Team extends Component {
           <h2 className="page-title">Баг хамт олон</h2>
         </div>
         <div className="team-standard agn-about-us our-team mt-70 pb-100">
-          <img src="images/shape/shape-61.svg" alt="" className="shape-one" />
-          <img
-            src="images/shape/shape-64.svg"
-            alt=""
-            className="shape-two"
-            data-aos="fade-left"
-          />
-          <img
-            src="images/shape/shape-65.svg"
-            alt=""
-            className="shape-three"
-            data-aos="fade-right"
-          />
-          <img src="images/shape/shape-60.svg" alt="" className="shape-four" />
+          <div className="shape-wrapper">
+            <img
+              src="images/shape/shape-64.svg"
+              alt=""
+              className="shape-two"
+              data-aos="fade-left"
+            />
+          </div>
           <div className="container">
             <div className="row">
               {this.renderMember(

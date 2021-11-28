@@ -236,7 +236,7 @@ class Pricing extends Component {
                             </div>
                             <div className="pr-footer">
                               <a
-                                href="https://erxes.io/create"
+                                href="https://erxes.io/signup"
                                 className="upgrade-button"
                               >
                                 Эхлэх
@@ -425,7 +425,7 @@ class Pricing extends Component {
                             </div>
                             <div className="pr-footer">
                               <a
-                                href="https://erxes.io/create"
+                                href="https://erxes.io/signup"
                                 className="upgrade-button"
                               >
                                 Эхлэх

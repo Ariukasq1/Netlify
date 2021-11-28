@@ -44,23 +44,22 @@ class Training extends Component {
                       сэтгэгдлээ хэлж болно.
                     </p>
                     <ul>
-                        <li className="mb-5">
-                          &emsp;<i class="fa fa-check" aria-hidden="true"></i>
-                          &nbsp;Эрксис бүтээгдэхүүний ерөнхий танилцуулга
-                        </li>
-                        <li className="mb-5">
-                          &emsp;<i class="fa fa-check" aria-hidden="true"></i>
-                          &nbsp;Таны бизнес онцлогт таарсан нэмэлт зөвөлгөө
-                        </li>
-                        <li className="mb-5">
-                          &emsp;<i class="fa fa-check" aria-hidden="true"></i>
-                          &nbsp;Асуулт, хариулт
-                        </li>
-                      </ul>
-                      <br />
-                      Та доорх анкетыг бөглөснөөр манай хамт олон онлайн
-                      уулзалтыг таны имэйлээр товлох болно.
-                    
+                      <li className="mb-5">
+                        &emsp;<i className="fa fa-check" aria-hidden="true"></i>
+                        &nbsp;Эрксис бүтээгдэхүүний ерөнхий танилцуулга
+                      </li>
+                      <li className="mb-5">
+                        &emsp;<i className="fa fa-check" aria-hidden="true"></i>
+                        &nbsp;Таны бизнес онцлогт таарсан нэмэлт зөвөлгөө
+                      </li>
+                      <li className="mb-5">
+                        &emsp;<i className="fa fa-check" aria-hidden="true"></i>
+                        &nbsp;Асуулт, хариулт
+                      </li>
+                    </ul>
+                    <br />
+                    Та доорх анкетыг бөглөснөөр манай хамт олон онлайн уулзалтыг
+                    таны имэйлээр товлох болно.
                   </div>
                   <br />
                   <br />
