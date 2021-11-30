@@ -52,12 +52,7 @@ class SolutionDetail extends Component {
           <div className="col-lg-6 order-lg-first">
             <div className="feature-img-box left">
               <div className="row img-wrapper pt-50">
-                <img
-                  src={`../images/${data.imgsrc}`}
-                  alt=""
-                  data-aos="fade-right"
-                  data-aos-duration="1200"
-                />
+                <img src={`../images/${data.imgsrc}`} alt="" />
               </div>
             </div>
           </div>
@@ -97,12 +92,7 @@ class SolutionDetail extends Component {
           <div className="col-lg-6 order-lg-last">
             <div className="feature-img-box right">
               <div className="row img-wrapper">
-                <img
-                  src={`../images/${data.imgsrc}`}
-                  alt=""
-                  data-aos="fade-left"
-                  data-aos-duration="1200"
-                />
+                <img src={`../images/${data.imgsrc}`} alt="" />
               </div>
             </div>
           </div>
