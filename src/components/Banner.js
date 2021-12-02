@@ -46,13 +46,13 @@ const Header = () => (
               className="more-button wow fadeInLeft animated"
               data-wow-delay="1.5s"
             >
-              Төлбөргүй турших{" "}
+              Төлбөргүй турших
               <i className="fa fa-angle-right" aria-hidden="true" />
             </a>
           </li>
           <li>
             <a
-              data-erxes-modal="Kuf9FA"
+              href="/demo"
               className="video-button video-button-one wow fadeInRight animated"
               data-wow-delay="1.5s"
             >
