@@ -11,16 +11,7 @@ const Index = () => {
   const onShowBanner = () => setShowBanner(!showBanner);
 
   return (
-    <Layout
-      forms={[
-        {
-          brand_id: "m7DmKt",
-          form_id: "Kuf9FA",
-        },
-      ]}
-      showInvest={showBanner ? true : false}
-      onShowBanner={onShowBanner}
-    >
+    <Layout showInvest={showBanner ? true : false} onShowBanner={onShowBanner}>
       <Banner />
       <Service />
       <Feature />

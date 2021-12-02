@@ -487,6 +487,7 @@ textarea {
   align-items: center;
   align-self: center;
 }
+
 /*----------------- Theme button ------------------*/
 body .solid-button-one {
   min-width: 188px;
@@ -8385,6 +8386,14 @@ body .line-button-three:hover,
 .reason .row .single-pr-table .pr-body .feature {
   font-family: inherit;
   text-align: center;
+}
+.demo .list li {
+  display: flex;
+  margin-bottom: 10px;
+}
+.demo .list li i {
+  margin: 5px 10px 0 0;
+  color: #4CAF50;
 }
 .invest h3 {
   font-size: 36px;
